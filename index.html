@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Tuition Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* White background */
+            color: #8c001a; /* Burgundy text color */
+        }
+        header {
+            background-color: #8c001a; /* Burgundy header background */
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: whitesmoke; /* Darker burgundy navigation background */
+            padding: 0.5em;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+        }
+        .logo {
+            max-height: 30px;
+            margin-left: 20px; /* Add left margin for spacing */
+        }
+
+        section {
+            padding: 2em;
+        }
+        .interactive {
+            background-color: #f2f2f2;
+        }
+        .videos {
+            background-color: #f9f9f9;
+            text-align: center;
+            padding: 2em 0;
+        }
+        .videos h2 {
+            color: #8c001a; /* Burgundy text color */
+        }
+        .videos iframe {
+            max-width: 100%;
+            margin: 1em;
+        }
+        .startlearning-button {
+            background-color: transparent; /* Transparent background */
+            color: #8c001a; /* Burgundy text color */
+            border: 2px solid #8c001a; /* Burgundy border */
+            padding: 0.5em 1em;
+            cursor: pointer;
+            margin-top: 1em;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s;  
+        }
+        .startlearning-button:hover,
+        nav a:hover {
+            background-color: #8c001a; /* Burgundy background on hover */
+            color: white; /* White text on hover */
+        }
+        .signup-button,
+        nav a {
+            background-color: transparent; /* Transparent background */
+            color: #8c001a; /* Burgundy text color */
+            border: 2px solid #8c001a; /* Burgundy border */
+            padding: 0.5em 1em;
+            cursor: pointer;
+            margin-top: 1em;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .signup-button:hover,
+        nav a:hover {
+            background-color: #8c001a; /* Burgundy background on hover */
+            color: white; /* White text on hover */
+        }
+
+        footer {
+            text-align: center;
+            background-color: #660012; /* Darker burgundy footer background */
+            color: white;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="mclogo.png" alt="Logo">
+        <h1>MasterClass Online</h1>
+        <p>Interactive Learning and Educational Videos</p>
+    </header>
+    
+   
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Tutors</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="login.html">My Learning</a>
+    </nav>
+    <section class="interactive">
+        <h2>Interactive Learning</h2>
+        <p>Engage in interactive lessons and activities to enhance your understanding.</p>
+        <button class="startlearning-button">Start Learning</button>
+        <button class="signup-button">Sign Up</button>
+    </section>
+    <section class="videos">
+        <h2>Educational Videos from our Centre</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </section>
+    <footer>
+        <p>&copy; 2023 Online Tuition Platform. All rights reserved.</p>
+        <nav>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </nav>
+    </footer>
+</body>
+</html>
+
+

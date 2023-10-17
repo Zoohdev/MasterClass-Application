@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* White background */
+            color: #8c001a; /* Burgundy text color */
+        }
+        header {
+            background-color: #8c001a; /* Burgundy header background */
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: whitesmoke; /* Darker burgundy navigation background */
+            padding: 0.5em;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+        }
+        .logo {
+            max-height: 30px;
+            margin-left: 20px; /* Add left margin for spacing */
+        }
+
+        section {
+            padding: 2em;
+        }
+        .interactive {
+            background-color: #f2f2f2;
+        }
+        .videos {
+            background-color: #f9f9f9;
+            text-align: center;
+            padding: 2em 0;
+        }
+        .videos h2 {
+            color: #8c001a; /* Burgundy text color */
+        }
+        .videos iframe {
+            max-width: 100%;
+            margin: 1em;
+        }
+        .submit-button {
+            background-color: transparent; /* Transparent background */
+            color: #8c001a; /* Burgundy text color */
+            border: 2px solid #8c001a; /* Burgundy border */
+            padding: 0.5em 1em;
+            cursor: pointer;
+            margin-top: 1em;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s;  
+        }
+        .submit-button:hover,
+        nav a:hover {
+            background-color: #8c001a; /* Burgundy background on hover */
+            color: white; /* White text on hover */
+        }
+        .signup-button,
+        nav a {
+            background-color: transparent; /* Transparent background */
+            color: #8c001a; /* Burgundy text color */
+            border: 2px solid #8c001a; /* Burgundy border */
+            padding: 0.5em 1em;
+            cursor: pointer;
+            margin-top: 1em;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+   </style>
+</head>
+<body>
+    <h1>Login to Access Videos</h1>
+    <form action="process_login.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <button class="submit-button" type="submit">Sign Up</button>
+        <button class="submit-button" type="submit">Login</button>
+    </form>
+</body>
+</html>
